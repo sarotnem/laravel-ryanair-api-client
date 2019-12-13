@@ -1,0 +1,28 @@
+{
+    "name": "sarotnem/ryanair-api-client",
+    "description": "A Ryanair API Client for Laravel 5",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sarotnem\\RyanairApiClient\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sarotnem\\RyanairApiClient\\RyanairApiClientServiceProvider"
+            ],
+            "aliases": {
+                "RyanairApiClient": "Sarotnem\\RyanairApiClient\\Facades\\RyanairApiClientFacade"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "sarotnem",
+        "email": "kyriakoskarpouzis@gmail.com"
+    }],
+    "minimum-stability": "dev"
+}
